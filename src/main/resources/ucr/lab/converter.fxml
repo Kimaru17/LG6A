@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="598.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerConverter">
+   <children>
+      <Pane layoutX="11.0" layoutY="14.0" prefHeight="54.0" prefWidth="600.0" style="-fx-background-color: #E87C1D;">
+         <children>
+            <Label layoutX="111.0" layoutY="15.0" text="Arithmetic Expression Converter">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="22.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane layoutX="11.0" layoutY="84.0" prefHeight="71.0" prefWidth="600.0" style="-fx-background-color: #3A9F88;">
+         <children>
+            <RadioButton fx:id="rbtn_Pre" layoutX="102.0" layoutY="24.0" mnemonicParsing="false" onAction="#btn_PrefixOnAction" prefHeight="4.0" prefWidth="87.0" selected="true" text="Prefix">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rbtn_In" layoutX="264.0" layoutY="24.0" mnemonicParsing="false" onAction="#btn_InfixOnAction" text="Infix">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rbtn_Pos" layoutX="415.0" layoutY="24.0" mnemonicParsing="false" onAction="#btn_PosfixOnAction" text="Posfix">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </RadioButton>
+         </children></Pane>
+      <Pane layoutX="10.0" layoutY="172.0" prefHeight="293.0" prefWidth="600.0" style="-fx-background-color: #2AD6F1;">
+         <children>
+            <Label layoutX="14.0" layoutY="89.0" text="Expression 1:">
+               <font>
+                  <Font name="Bookman Old Style" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="129.0" text="Expression 2:">
+               <font>
+                  <Font name="Bookman Old Style" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="169.0" text="Expression 3:">
+               <font>
+                  <Font name="Bookman Old Style" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="204.0" text="Expression 4:">
+               <font>
+                  <Font name="Bookman Old Style" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="239.0" text="Expression 5:">
+               <font>
+                  <Font name="Bookman Old Style" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="msg1text" layoutX="138.0" layoutY="16.0" text="Prefix">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="msg2text" layoutX="310.0" layoutY="16.0" text="Infix">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="msg3text" layoutX="468.0" layoutY="16.0" text="Posfix">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="27.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt_ExI" layoutX="109.0" layoutY="85.0" />
+            <TextField fx:id="txt_ExIII" layoutX="109.0" layoutY="164.0" />
+            <TextField fx:id="txt_ExII" layoutX="109.0" layoutY="124.0" />
+            <TextField fx:id="txt_ExVI" layoutX="109.0" layoutY="199.0" />
+            <TextField fx:id="txt_ExV" layoutX="109.0" layoutY="238.0" />
+            <Text fx:id="result1Text1" layoutX="321.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="result1Text2" layoutX="321.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="result1Text3" layoutX="321.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="result1Text4" layoutX="321.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="result1Text5" layoutX="321.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="result2Text1" layoutX="488.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="result2Text2" layoutX="488.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="result2Text3" layoutX="488.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="result2Text4" layoutX="488.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="result2Text5" layoutX="488.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+         </children></Pane>
+      <Pane layoutX="11.0" layoutY="474.0" prefHeight="117.0" prefWidth="600.0" style="-fx-background-color: #FFFCF0;">
+         <children>
+            <Button layoutX="133.0" layoutY="32.0" mnemonicParsing="false" onAction="#convertOnAction" prefHeight="54.0" prefWidth="108.0" style="-fx-background-color: #B0E0E7;" text="Convert" />
+            <Button layoutX="389.0" layoutY="32.0" mnemonicParsing="false" onAction="#cleanOnAction" prefHeight="54.0" prefWidth="108.0" style="-fx-background-color: #B0E0E7;" text="Clean" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
