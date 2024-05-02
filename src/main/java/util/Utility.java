@@ -18,7 +18,7 @@ public class Utility {
     public static String show(int[] a, int size) {
         String result="";
         for (int i = 0; i < size; i++) {
-            result+= STR."\{a[i]} ";
+            result+= "a[i] ";
         }
         return result;
     }

@@ -3,12 +3,12 @@ package domain;
 public class Person {
     public  int id;
     public String name;
-    public  int agr;
+    public  int age;
 
-    public Person(int id, String name, int agr) {
+    public Person(int id, String name, int age) {
         this.id = id;
         this.name = name;
-        this.agr = agr;
+        this.age = age;
     }
 
     public int getId() {
@@ -27,12 +27,12 @@ public class Person {
         this.name = name;
     }
 
-    public int getAgr() {
-        return agr;
+    public int getAge() {
+        return age;
     }
 
-    public void setAgr(int agr) {
-        this.agr = agr;
+    public void setAge(int age) {
+        this.age = age;
     }
 
     @Override
@@ -40,7 +40,7 @@ public class Person {
         return "Person{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", agr=" + agr +
+                ", age=" + age +
                 '}';
     }
 }
