@@ -443,6 +443,4 @@ public class ControllerConverter {
             return 0; // Para cualquier otro carácter (por ejemplo, paréntesis)
         }
     }
-
-
 }
