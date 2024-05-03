@@ -86,7 +86,7 @@ public class LinkedQueue implements Queue {
         }else{ //que pasa si ya hay elementos encolados
             Node aux = front;
             Node prev = front;
-            while(aux!=null&&aux.priority>=priority){
+            while(aux!=null&&aux.priority<=priority){
                 prev = aux; //dejo un rastro
                 aux = aux.next;
             }
