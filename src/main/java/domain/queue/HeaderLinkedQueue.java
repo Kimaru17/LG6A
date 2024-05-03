@@ -78,7 +78,7 @@ public class HeaderLinkedQueue implements Queue {
         }else{ //que pasa si ya hay elementos encolados
             Node aux = front.next;
             Node prev = front.next;
-            while(aux!=null&&aux.priority>=priority){
+            while(aux!=null&&aux.priority<=priority){
                 prev = aux; //dejo un rastro
                 aux = aux.next;
             }
