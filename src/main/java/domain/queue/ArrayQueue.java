@@ -100,7 +100,7 @@ ArrayQueue implements Queue{
         //cuando la cola esta vacia no entra al for
         for (int i = front; i < rear && !added; i++) {
             //verificamos la prioridad
-            if(priorityQueue[i+1]!=null&&priority>priorityQueue[i+1]){
+            if(priorityQueue[i+1]!=null&&priority<priorityQueue[i+1]){
                 queue[i] = element;
                 priorityQueue[i] = priority;
                 added = true; //rompe el bucle
